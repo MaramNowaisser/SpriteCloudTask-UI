@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-05-23T21:20:59.608387" rpa="false" schemaversion="5">
+<suite id="s1" name="LoadDelays" source="C:\Users\mnowaisser\AppData\Local\Microsoft\WindowsApps\python\Project1\SpriteCloud\Tests\LoadDelays.robot">
+<test id="s1-t1" name="Load Delays Test" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-23T21:20:59.789260" level="INFO">Opening browser 'chrome' to base url 'http://www.uitestingplayground.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-23T21:20:59.789260" elapsed="2.891103"/>
+</kw>
+<kw name="Steps" owner="LoadDelaysSteps">
+<kw name="Go To Home Page" owner="LoadDelaysSteps">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-23T21:21:02.682361" level="INFO">Opening url 'http://www.uitestingplayground.com'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-23T21:21:02.682361" elapsed="0.267870"/>
+</kw>
+<doc>Navigates to the Home page.</doc>
+<status status="PASS" start="2024-05-23T21:21:02.681361" elapsed="0.268870"/>
+</kw>
+<kw name="Click Load Delays Link" owner="LoadDelaysSteps">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-23T21:21:02.951365" level="INFO">Clicking link 'Load Delay'.</msg>
+<arg>Load Delay</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-23T21:21:02.951365" elapsed="5.294410"/>
+</kw>
+<doc>Clicks on the Load Delays link.</doc>
+<status status="PASS" start="2024-05-23T21:21:02.950231" elapsed="5.295544"/>
+</kw>
+<kw name="Wait For Page To Load And Click Button" owner="LoadDelaysSteps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.btn.btn-primary</arg>
+<arg>timeout=20 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-23T21:21:08.246986" elapsed="0.027770"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-23T21:21:08.275804" level="INFO">Clicking button 'css:button.btn.btn-primary'.</msg>
+<arg>css:button.btn.btn-primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-23T21:21:08.275804" elapsed="0.050048"/>
+</kw>
+<doc>Waits for the page to load and clicks the button.</doc>
+<status status="PASS" start="2024-05-23T21:21:08.245775" elapsed="0.080233"/>
+</kw>
+<status status="PASS" start="2024-05-23T21:21:02.681361" elapsed="5.644647"/>
+</kw>
+<kw name="Finish TestCase" owner="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-23T21:21:08.326008" elapsed="2.220257"/>
+</kw>
+<status status="PASS" start="2024-05-23T21:21:08.326008" elapsed="2.220257"/>
+</kw>
+<status status="PASS" start="2024-05-23T21:20:59.789125" elapsed="10.757140"/>
+</test>
+<status status="PASS" start="2024-05-23T21:20:59.611713" elapsed="10.935847"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoadDelays">LoadDelays</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
