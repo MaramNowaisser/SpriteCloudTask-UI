@@ -12,3 +12,6 @@ Actully I selected a random cases but I took into my considration to cover the b
 - Frequency of Use: Automate tests for features used most frequently by users.
 - Complexity and Risk: Prioritize features that are complex and pose a high risk if they fail.
 - Repetitive Tasks: Automate repetitive testing tasks to save time and reduce human error.
+
+
+You can find results report at results folder
